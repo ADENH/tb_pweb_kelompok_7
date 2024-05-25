@@ -50,7 +50,6 @@ app.use((req, res, next) => {
 });
 
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`Deployment Server berjalan di http://localhost:${PORT}`);
+app.listen(process.env.PORT || 5000, function(){
+  console.log("Deployment in Heroku Express server listening on port %d in %s mode", this.address().port, app.settings.env);
 });
