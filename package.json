@@ -9,7 +9,8 @@
     "dev": "nodemon & npx tailwindcss -i ./src/input.css -o ./assets/output.css --watch"
   },
   "engines": {
-    "node": "20.x"
+    "node": "20.x",
+    "npm": "10.x"
   },
   "keywords": [],
   "author": "",
